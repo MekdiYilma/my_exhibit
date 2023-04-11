@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>MyNextVacay</title>
+    <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,11 +13,19 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"></script>
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/3e592ccd56.js"
+      crossorigin="anonymous"></script>
+
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap"
       rel="stylesheet" />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -24,8 +33,8 @@
     <section id="title">
       <div class="container-fluid">
         <!-- Nav Bar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="">MyNextVacay</a>
+        <nav class="navbar navbar-expand-lg navbar-light mb-5">
+          <a class="navbar-brand brand-color" id="logo" href="">MyNextVacay</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -37,7 +46,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarToggler">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto gap-4">
               <li class="nav-item">
                 <a class="nav-link" href="">Contact</a>
               </li>
@@ -54,10 +63,23 @@
         <!-- Title -->
         <div class="row">
           <div class="col-lg-6">
-            <h1>Discover your perfect escape with just a tap.</h1>
-            <h2>Your next adventure awaits with our app!</h2>
-            <button type="button">Download</button>
-            <button type="button">Download</button>
+            <h1 class="brand-color" id="brand-message">
+              Discover your perfect escape with just a tap.
+            </h1>
+            <h2 id="brand-sub-message">
+              Your next adventure awaits with our app!
+            </h2>
+            <button
+              type="button"
+              class="btn btn-lg mt-5 me-3"
+              id="apple-download-btn">
+              <i class="fa-brands fa-apple"></i>
+              Download
+            </button>
+            <button type="button" class="btn btn-outline-info btn-lg mt-5">
+              <i class="fa-brands fa-google-play"></i>
+              Download
+            </button>
           </div>
           <div class="col-lg-6">
             <img src="images/download_app2.png" alt="iphone-mockup" />
@@ -69,16 +91,32 @@
     <!-- Features -->
 
     <section id="features">
-      <h3>Easy breezy.</h3>
-      <p>So easy to use, you'll feel like you're already on vacation!</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <i class="fa-solid fa-wind fa-3x circle-bg"></i>
+            <h3 class="mont-font">Easy breezy.</h3>
+            <p class="p-light">
+              So easy to use, you'll feel like you're already on vacation!
+            </p>
+          </div>
 
-      <h3>Discover hidden gems.</h3>
-      <p>Unlock the world's best-kept secrets.</p>
+          <div class="col-lg-4">
+            <i class="fa-solid fa-gem fa-3x circle-bg"></i>
+            <h3 class="mont-font">Discover hidden gems.</h3>
+            <p class="p-light">Unlock the world's best-kept secrets.</p>
+          </div>
 
-      <h3>Guaranteed to inspire.</h3>
-      <p>
-        Isn't your passport begging for another stamp? Find your next adventure!
-      </p>
+          <div class="col-lg-4">
+            <i class="fa-solid fa-stamp fa-3x circle-bg"></i>
+            <h3 class="mont-font">Guaranteed to inspire.</h3>
+            <p class="p-light">
+              Isn't your passport begging for another stamp? Find your next
+              adventure!
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Testimonials -->

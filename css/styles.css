@@ -1,20 +1,82 @@
-h1 {
-    font-family: Montserrat-Black;
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 1.5;
-}
+/* first page  */
 
-h2 {
-    font-family: Montserrat-Black;
-    font-size: 2rem;
-    line-height: 1.5;
+.brand-color {
+    background: -webkit-linear-gradient(left, #98b342, #1bd4ce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .container-fluid {
     padding: 3% 15%;
 }
 
+.nav-link {
+    color: black;
+    font-size: 1.3rem;
+}
+
+.nav-link:hover {
+    color: #7b664e;
+}
+
 #title {
     background-color: #efefee;
 }
+
+#logo {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+#brand-message {
+    font-family: Montserrat-Black;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+#brand-sub-message {
+    font-family: Montserrat-Black;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+#apple-download-btn {
+    background-color: #98b342;
+}
+
+#apple-download-btn:hover {
+    background-color: white;
+}
+
+/* second page */
+
+.mont-font {
+    font-family: Montserrat-Bold;
+    font-size: 1.5 rem;
+    padding-top: 20px;
+}
+
+.p-light{
+    color: #8f8f8f;
+}
+
+.circle-bg{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center;
+    background: linear-gradient(#98b342,#1bd4ce);
+}
+
+.circle-bg:hover{
+    background: linear-gradient(#5a662c,#0ca4a7);
+}
+
+#features {
+    text-align: center;
+    padding: 7% 10%;
+}
+
