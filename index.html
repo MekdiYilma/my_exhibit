@@ -64,17 +64,14 @@
 
         <!-- Title -->
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6" id="brand-message-group">
             <h1 class="brand-text-color" id="brand-message">
               Discover your perfect escape with just a tap.
             </h1>
             <h2 id="brand-sub-message">
               Your next adventure awaits with our app!
             </h2>
-            <button
-              type="button"
-              class="btn btn-lg mt-5 me-3"
-              id="apple-download-btn">
+            <button type="button" class="btn btn-lg mt-5 me-3 brand-green">
               <i class="fa-brands fa-apple"></i>
               Download
             </button>
@@ -84,7 +81,10 @@
             </button>
           </div>
           <div class="col-lg-6">
-            <img src="images/download_app2.png" alt="iphone-mockup" />
+            <img
+              id="iphone"
+              src="images/download_app2.png"
+              alt="iphone-mockup" />
           </div>
         </div>
       </div>
@@ -98,7 +98,7 @@
           <div class="col-lg-4">
             <i class="fa-solid fa-wind fa-3x circle-bg brand-bg-color"></i>
             <h3 class="mont-font">Easy breezy.</h3>
-            <p class="p-light">
+            <p class="grey-text">
               So easy to use, you'll feel like you're already on vacation!
             </p>
           </div>
@@ -106,13 +106,13 @@
           <div class="col-lg-4">
             <i class="fa-solid fa-gem fa-3x circle-bg brand-bg-color"></i>
             <h3 class="mont-font">Discover hidden gems.</h3>
-            <p class="p-light">Unlock the world's best-kept secrets.</p>
+            <p class="grey-text">Unlock the world's best-kept secrets.</p>
           </div>
 
           <div class="col-lg-4">
             <i class="fa-solid fa-stamp fa-3x circle-bg brand-bg-color"></i>
             <h3 class="mont-font">Guaranteed to inspire.</h3>
-            <p class="p-light">
+            <p class="grey-text">
               Isn't your passport begging for another stamp? Find your next
               adventure!
             </p>
@@ -124,57 +124,127 @@
     <!-- Testimonials -->
 
     <section class="brand-bg-color" id="testimonials">
-      <h2 id="testimony">
-        I used to spend hours scrolling through endless travel websites looking
-        for the perfect vacation spot, but with this app's spot-matching
-        algorithm, I found my dream destination in minutes! It's like having my
-        own personal travel agent right in my pocket!
-      </h2>
-      <img
-        class="testimonial-image"
-        src="images/testimony_1.png"
-        alt="person1-profile" />
-      <em>Pebbles, New York</em>
-
-      <!-- <h2 class="testimonial-text">I thought I knew all the best vacation spots, 
-        but this app showed me places I never even knew existed! Thanks to MyNextVacay, 
-        I can now explore the world like a true adventurer.</h2>
-    <img class="testimonial-image" src="images/testimony_2.png" alt="lady-profile">
-    <em>Beverly, Illinois</em> -->
+      <div id="testimonialcarousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2 class="testimonial-text">
+              I used to spend hours scrolling through endless travel websites
+              looking for the perfect vacation spot, but with this app's
+              spot-matching algorithm, I found my dream destination in minutes!
+              It's like having my own personal travel agent right in my pocket!
+            </h2>
+            <img
+              class="testimonial-image"
+              src="images/testimony_1.png"
+              alt="man-profile" />
+            <em>San Francisco, California</em>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-text">
+              I thought I knew all the best vacation spots, but this app showed
+              me places I never even knew existed! Thanks to MyNextVacay, I can
+              now explore the world like a true adventurer.
+            </h2>
+            <img
+              class="testimonial-image"
+              src="images/testimony_2.png"
+              alt="couple-profile" />
+            <em>Los Angeles, California</em>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#testimonialcarousel"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#testimonialcarousel"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
 
     <!-- Press -->
 
-    <section id="press">
-      <img src="images/techcrunch.png" alt="tc-logo" />
-      <img src="images/tnw.png" alt="tnw-logo" />
-      <img src="images/bizinsider.png" alt="biz-insider-logo" />
-      <img src="images/mashable.png" alt="mashable-logo" />
+    <section class="extend-color" id="press">
+      <img class="press-logo" src="images/techcrunch.png" alt="tc-logo" />
+      <img class="press-logo" src="images/tnw.png" alt="tnw-logo" />
+      <img
+        class="press-logo"
+        src="images/bizinsider.png"
+        alt="biz-insider-logo" />
+      <img class="press-logo" src="images/mashable.png" alt="mashable-logo" />
     </section>
 
     <!-- Pricing -->
 
     <section id="pricing">
-      <h2>A Plan for Every Adventurer</h2>
-      <p>Simple and affordable price plans for your and your companion.</p>
+      <h2 id>A Plan for Every Adventurer</h2>
+      <p class="grey-text">
+        Simple and affordable price plans for your and your companion.
+      </p>
 
-      <h3>Thrill Seekers</h3>
-      <h2>Free</h2>
-      <p>1 Matches Per Day</p>
-      <button type="button">Sign Up</button>
+      <div class="container">
+        <div class="row">
+          <div class="pricing-col col-lg-4 col-sm-6">
+            <div class="card">
+              <div class="card-header">
+                <h3>Thrill Seekers</h3>
+              </div>
 
-      <h3>Relaxation Experts</h3>
-      <h2>$1 / mo</h2>
-      <p>2 Matches Per Day</p>
-      <p>Unlimited Forwarding</p>
-      <button type="button">Sign Up</button>
+              <div class="card-body">
+                <h2>Free</h2>
+                <p class="grey-text">1 Matches Per Day</p>
+                <button type="button" class="w-100 btn btn-outline-info btn-lg">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
 
-      <h3>Culture Immersers</h3>
-      <h2>$10 / mo</h2>
-      <p>Matching on Demand</p>
-      <p>Pirority Listing</p>
-      <p>Access to More Info on Destination</p>
-      <button type="button">Sign Up</button>
+          <div class="pricing-col col-lg-4 col-sm-6">
+            <div class="card">
+              <div class="card-header">
+                <h3>Relaxation Experts</h3>
+              </div>
+
+              <div class="card-body">
+                <h2>$1 / mo</h2>
+                <p class="grey-text">2 Matches Per Day</p>
+                <p class="grey-text">Unlimited Forwarding</p>
+                <button type="button" class="w-100 btn btn-lg brand-green">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing-col col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <h3>Culture Immersers</h3>
+              </div>
+
+              <div class="card-body">
+                <h2>$10 / mo</h2>
+                <p class="grey-text">Matching on Demand</p>
+                <p class="grey-text">Pirority Listing</p>
+                <p class="grey-text">Access to More Info on Destination</p>
+                <button type="button" class="w-100 btn btn-lg brand-green">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Call to Action -->

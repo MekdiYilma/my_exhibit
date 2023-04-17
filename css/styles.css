@@ -6,6 +6,10 @@
     -webkit-text-fill-color: transparent;
 }
 
+.brand-green {
+    background-color: #98b342;
+}
+
 .container-fluid {
     padding: 3% 15%;
 }
@@ -28,6 +32,11 @@
     font-size: 1.5rem;
 }
 
+#brand-message-group {
+    position: relative;
+    z-index: 1;
+}
+
 #brand-message {
     font-family: Montserrat-Black;
     font-weight: 700;
@@ -41,13 +50,34 @@
     line-height: 1.5;
 }
 
-#apple-download-btn {
-    background-color: #98b342;
-}
 
 #apple-download-btn:hover {
     background-color: white;
 }
+
+#iphone{
+    transform: rotate(10deg);
+    position: relative;
+
+}
+
+@media (max-width: 880px) {
+    #brand-message-group{
+        text-align: center;
+    }
+
+    #iphone {
+        transform: rotate(0deg);
+        position: relative;
+    }
+}
+
+@media (max-width: 500px) {
+    #iphone {
+        transform:translateX(-20%) rotate(0deg);
+    }
+}
+
 
 /* features section */
 
@@ -57,7 +87,7 @@
     padding-top: 20px;
 }
 
-.p-light{
+.grey-text{
     color: #8f8f8f;
 }
 
@@ -80,12 +110,16 @@
 }
 
 #features {
+    /* background-color: white; */
     text-align: center;
-    padding: 7% 10%;
+    padding: 7% 10% 0%;
+    position: relative;
+    top: -125px;
+    /* z-index: 1; */
 }
 
 
-/* testimonial section */
+/* testimonial and section */
 
 .testimonial-image{
     width: 10%;
@@ -93,17 +127,49 @@
     margin: 20px;
 }
 
-#testimonials {
-    text-align: center;
-    padding: 7% 10%;
-
+.extend-color{
+    background-color: #1bd4ce;
 }
 
-#testimony {
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 15px;
+    /* -webkit-filter: grayscale(100%); */
+}
+
+.testimonial-text {
     font-family: Montserrat-Bold;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 1.5;
 }
 
+.carousel-item{
+    padding: 7% 10%;
+}
+
+#testimonials {
+    text-align: center;
+}
 
 
+#press{
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+
+/* pricing section */
+
+.card{
+    height: 100%;
+    text-align: center; 
+  }
+
+.pricing-col{
+    padding: 3% 2%;
+}
+
+#pricing{
+    padding: 100px;
+    text-align: center;
+}
