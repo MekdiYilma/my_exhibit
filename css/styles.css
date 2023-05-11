@@ -1,175 +1,191 @@
 /* front page  */
 
 .brand-text-color {
-    background: -webkit-linear-gradient(left, #98b342, #1bd4ce);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(left, #98b342, #1bd4ce);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .brand-green {
-    background-color: #98b342;
+  background-color: #98b342;
 }
 
 .container-fluid {
-    padding: 3% 15%;
+  padding: 3% 15%;
 }
 
 .nav-link {
-    color: black;
-    font-size: 1.3rem;
+  color: black;
+  font-size: 1.3rem;
 }
 
 .nav-link:hover {
-    color: #7b664e;
+  color: #7b664e;
 }
 
 #title {
-    background-color: #efefee;
+  background-color: #efefee;
 }
 
 #logo {
-    font-weight: 900;
-    font-size: 1.5rem;
+  font-weight: 900;
+  font-size: 1.5rem;
 }
 
 #brand-message-group {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 #brand-message {
-    font-family: Montserrat-Black;
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 1.5;
+  font-family: Montserrat-Black;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 #brand-sub-message {
-    font-family: Montserrat-Black;
-    font-size: 2rem;
-    line-height: 1.5;
+  font-family: Montserrat-Black;
+  font-size: 2rem;
+  line-height: 1.5;
 }
-
 
 #apple-download-btn:hover {
-    background-color: white;
+  background-color: white;
 }
 
-#iphone{
-    transform: rotate(10deg);
-    position: relative;
-
+#iphone {
+  transform: rotate(10deg);
+  position: relative;
 }
 
 @media (max-width: 880px) {
-    #brand-message-group{
-        text-align: center;
-    }
+  #brand-message-group {
+    text-align: center;
+  }
 
-    #iphone {
-        transform: rotate(0deg);
-        position: relative;
-    }
+  #iphone {
+    transform: rotate(0deg);
+    position: relative;
+  }
 }
 
 @media (max-width: 500px) {
-    #iphone {
-        transform:translateX(-20%) rotate(0deg);
-    }
+  #iphone {
+    transform: translateX(-20%) rotate(0deg);
+  }
 }
-
 
 /* features section */
 
 .mont-font {
-    font-family: Montserrat-Bold;
-    font-size: 1.5 rem;
-    padding-top: 20px;
+  font-family: Montserrat-Bold;
+  font-size: 1.5 rem;
+  padding-top: 20px;
 }
 
-.grey-text{
-    color: #8f8f8f;
+.grey-text {
+  color: #8f8f8f;
 }
 
-.brand-bg-color{
-    background: linear-gradient(#98b342,#1bd4ce);
+.brand-bg-color {
+  background: linear-gradient(#98b342, #1bd4ce);
 }
 
-
-.circle-bg{
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    display: inline-flex; 
-    align-items: center; 
-    justify-content: center;
+.circle-bg {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.circle-bg:hover{
-    background: linear-gradient(#5a662c,#0ca4a7);
+.circle-bg:hover {
+  background: linear-gradient(#5a662c, #0ca4a7);
 }
 
 #features {
-    /* background-color: white; */
-    text-align: center;
-    padding: 7% 10% 0%;
-    position: relative;
-    top: -125px;
-    /* z-index: 1; */
+  /* background-color: white; */
+  text-align: center;
+  padding: 7% 10% 0%;
+  position: relative;
+  top: -125px;
+  /* z-index: 1; */
 }
-
 
 /* testimonial and section */
 
-.testimonial-image{
-    width: 10%;
-    border-radius: 100%;
-    margin: 20px;
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
 }
 
-.extend-color{
-    background-color: #1bd4ce;
+.extend-color {
+  background-color: #1bd4ce;
 }
 
-.press-logo{
-    width: 15%;
-    margin: 20px 20px 15px;
-    /* -webkit-filter: grayscale(100%); */
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 15px;
+  /* -webkit-filter: grayscale(100%); */
 }
 
 .testimonial-text {
-    font-family: Montserrat-Bold;
-    font-size: 2.5rem;
-    line-height: 1.5;
+  font-family: Montserrat-Bold;
+  font-size: 2.5rem;
+  line-height: 1.5;
 }
 
-.carousel-item{
-    padding: 7% 10%;
+.carousel-item {
+  padding: 7% 10%;
 }
 
 #testimonials {
-    text-align: center;
+  text-align: center;
 }
 
-
-#press{
-    text-align: center;
-    padding-bottom: 3%;
+#press {
+  text-align: center;
+  padding-bottom: 3%;
 }
-
 
 /* pricing section */
 
-.card{
-    height: 100%;
-    text-align: center; 
-  }
-
-.pricing-col{
-    padding: 3% 2%;
+.card {
+  height: 100%;
+  text-align: center;
 }
 
-#pricing{
-    padding: 100px;
-    text-align: center;
+.pricing-col {
+  padding: 3% 2%;
+}
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.border-blue {
+  border-color: #1bd4ce;
+}
+
+.border-green {
+  border-color: #98b342;
+}
+
+/* footer section */
+.flex {
+  display: flex;
+  justify-content: space-around;
 }
